@@ -22,17 +22,16 @@ Array.prototype.pack=function() {
 var r = parseInt(readline());
 var l = parseInt(readline());
 
-var seqence = new Array();
-seqence.push(r);
+var sequence = new Array();
+sequence.push(r);
 
 for (var i=0; i<l-1; i++){
-    var temp = seqence.pack();
-    seqence = [];
+    var temp = sequence.pack();
+    sequence = [];
     temp.forEach(function(elem, ind, arr) {
-        var t = [];
-        seqence.push(elem.length);
-        seqence.push(elem[0]);
+        sequence.push(elem.length);
+        sequence.push(elem[0]);
     });
 }
 
-print(seqence.join(' '));
+print(sequence.join(' '));
