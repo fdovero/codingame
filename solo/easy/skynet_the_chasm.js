@@ -9,9 +9,6 @@ while (true) {
     var S = parseInt(readline()); // the motorbike's speed.
     var X = parseInt(readline()); // the position on the road of the motorbike.
 
-    // Write an action using print()
-    // To debug: printErr('Debug messages...');
-
     if(S > G +1){
         fl_s = 0;
     } else {
