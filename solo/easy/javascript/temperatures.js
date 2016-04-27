@@ -14,7 +14,7 @@ if (TEMPS) {
         return parseInt(val);
     });
 
-    if(arr.indexOf(arr.minabs()) != -1) {
+    if (arr.indexOf(arr.minabs()) != -1) {
         print(arr.minabs());
     } else {
         print(-arr.minabs());

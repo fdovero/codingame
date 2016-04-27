@@ -32,13 +32,13 @@ while (true) {
 
     printErr(Math.round(commande));
 
-    if(commande > 0 || commande > 4) {
+    if (commande > 0 || commande > 4) {
         print('0 0');
     } else {
         if (commande < -4) {
             print('0 4');
         } else {
-            print('0 '+Math.abs(commande));
+            print('0 ' + Math.abs(commande));
         }
     }
 

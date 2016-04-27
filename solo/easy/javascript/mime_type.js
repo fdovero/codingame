@@ -11,9 +11,9 @@ for (var i = 0; i < N; i++) {
 for (var i = 0; i < Q; i++) {
     var FNAME = readline(); // One file name per line.
     var spl = FNAME.split('.');
-    var id = EXT.indexOf(spl[spl.length -1].toLowerCase());
+    var id = EXT.indexOf(spl[spl.length - 1].toLowerCase());
 
-    if ((id != -1) && (spl.length > 1)){
+    if ((id != -1) && (spl.length > 1)) {
         print(MT[id]);
     } else {
         print('UNKNOWN');

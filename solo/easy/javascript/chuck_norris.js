@@ -3,7 +3,7 @@ var BinTmp = new Array();
 // Write an action using print()
 // To debug: printErr('Debug messages...');
 
-for(i=0;i<MESSAGE.length;i++) {
+for (i = 0; i < MESSAGE.length; i++) {
     BinTmp[i] = parseInt(MESSAGE.charCodeAt(i)).toString(2);
     if (BinTmp[i].length < 7) {
         BinTmp[i] = '0000000' + BinTmp[i];
@@ -20,26 +20,32 @@ var bit = 0;
 var prevind = 0;
 var Unaire = '';
 
-while(ind<BinMessage.length) {
-    ind = BinMessage.indexOf(bit,ind);
-    if(ind == 0){
+while (ind < BinMessage.length) {
+    ind = BinMessage.indexOf(bit, ind);
+    if (ind == 0) {
         bit = 1;
-        ind = BinMessage.indexOf(bit,ind);
+        ind = BinMessage.indexOf(bit, ind);
     }
 
-    switch(bit){
-            case 0: Unaire += ' 0 '; bit=1; break;
-            case 1: Unaire += ' 00 '; bit=0; break;
+    switch (bit) {
+        case 0:
+            Unaire += ' 0 ';
+            bit = 1;
+            break;
+        case 1:
+            Unaire += ' 00 ';
+            bit = 0;
+            break;
     }
 
-    if(ind != -1){
+    if (ind != -1) {
         l = ind - prevind;
     } else {
         l = BinMessage.length - prevind;
         ind = BinMessage.length;
     }
 
-    for(i=0;i<l;i++){
+    for (i = 0; i < l; i++) {
         Unaire += '0';
     }
 

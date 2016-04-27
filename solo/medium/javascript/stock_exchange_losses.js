@@ -1,9 +1,9 @@
-Array.prototype.max=function() {
-    return Math.max.apply(Math,this);
+Array.prototype.max = function() {
+    return Math.max.apply(Math, this);
 };
 
-Array.prototype.min=function() {
-    return Math.min.apply(Math,this);
+Array.prototype.min = function() {
+    return Math.min.apply(Math, this);
 };
 
 var n = parseInt(readline());
@@ -33,7 +33,7 @@ var answer = tab.max()>0?'-'+tab.max():0;
 /***** tricky O(n) solution *****/
 var min = vs.min();
 var minIndex = vs.lastIndexOf(min);
-var max = vs.slice(0,minIndex).max();
+var max = vs.slice(0, minIndex).max();
 
-answer = (max-min)>0?'-'.concat(max-min):0;
+answer = (max - min) > 0 ? '-'.concat(max - min) : 0;
 print(answer);

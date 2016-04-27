@@ -1,4 +1,4 @@
-Array.prototype.pack=function() {
+Array.prototype.pack = function() {
     var arr = this;
     if (arr.length == 0) {
         return [];
@@ -25,7 +25,7 @@ var l = parseInt(readline());
 var sequence = new Array();
 sequence.push(r);
 
-for (var i=0; i<l-1; i++){
+for (var i = 0; i < l - 1; i++) {
     var temp = sequence.pack();
     sequence = [];
     temp.forEach(function(elem, ind, arr) {

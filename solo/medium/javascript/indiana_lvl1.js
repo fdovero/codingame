@@ -8,65 +8,67 @@ for (var i = 0; i < H; i++) {
 var EX = parseInt(readline()); // the coordinate along the X axis of the exit (not useful for this first mission, but must be read).
 
 var Indy = {
-    pos : 'NONE',
-    x : 0,
-    y : 0,
-    T0 : function() { return false; },
-    T1 : function() {
+    pos: 'NONE',
+    x: 0,
+    y: 0,
+    T0: function() {
+        return false;
+    },
+    T1: function() {
         this.y++;
     },
-    T2 : function() {
+    T2: function() {
         if (this.pos == 'LEFT') {
-                this.x++;
+            this.x++;
         } else if (this.pos == 'RIGHT') {
             this.x--;
         }
     },
-    T3  : function() {
+    T3: function() {
         this.y++;
     },
-    T4  : function() {
+    T4: function() {
         if (this.pos == 'TOP') {
-                this.x--;
+            this.x--;
         } else if (this.pos == 'RIGHT') {
             this.y++;
         }
     },
-    T5  : function() {
+    T5: function() {
         if (this.pos == 'TOP') {
-                this.x++;
+            this.x++;
         } else if (this.pos == 'LEFT') {
             this.y++;
         }
     },
-    T6  : function() {
+    T6: function() {
         if (this.pos == 'LEFT') {
-                this.x++;
+            this.x++;
         } else if (this.pos == 'RIGHT') {
             this.x--;
         } else {
             return false;
         }
     },
-    T7  : function() {
+    T7: function() {
         this.y++;
     },
-    T8  : function() {
+    T8: function() {
         this.y++;
     },
-    T9  : function() {
+    T9: function() {
         this.y++;
     },
-    T10 : function() {
+    T10: function() {
         this.x--;
     },
-    T11 : function() {
+    T11: function() {
         this.x++;
     },
-    T12 : function() {
+    T12: function() {
         this.y++;
     },
-    T13 : function() {
+    T13: function() {
         this.y++;
     }
 };
@@ -98,5 +100,4 @@ while (true) {
     // Write an action using print()
     // To debug: printErr('Debug messages...');
 
-    print(Indy.x+' '+Indy.y); // One line containing the X Y coordinates of the room in which you believe Indy will be on the next turn.
-}
+    print(Indy.x + ' ' + Indy.y); // One line containing the X Y coordinates of the room in which you believe Indy will be on the next turn.}

@@ -1,5 +1,5 @@
 Array.prototype.sum = function() {
-    return this.reduce(function(previousValue, currentValue){
+    return this.reduce(function(previousValue, currentValue) {
         return previousValue + currentValue;
     });
 }
@@ -19,13 +19,13 @@ var full = 0;
 if (somme < C) {
     print('IMPOSSIBLE');
 } else {
-    B.sort(function(a,b) {
-        return a-b;
+    B.sort(function(a, b) {
+        return a - b;
     });
 
-    while( B.length > 0) {
-        var split = Math.floor(C/B.length);
-        if(split > B[0]) {
+    while (B.length > 0) {
+        var split = Math.floor(C / B.length);
+        if (split > B[0]) {
             var val = B.shift();
             C -= val;
             print(val);

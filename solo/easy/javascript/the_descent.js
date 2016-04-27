@@ -1,5 +1,5 @@
 Array.prototype.maxIndex = function() {
-  return this.indexOf(Math.max.apply(Math, this));
+    return this.indexOf(Math.max.apply(Math, this));
 };
 
 // game loop
@@ -16,7 +16,7 @@ while (true) {
     // Write an action using print()
     // To debug: printErr('Debug messages...');
 
-    if(SX == MH.maxIndex()) {
+    if (SX == MH.maxIndex()) {
         print('FIRE');
     } else {
         print('HOLD'); // either:  FIRE (ship is firing its phase cannons) or HOLD (ship is not firing).
