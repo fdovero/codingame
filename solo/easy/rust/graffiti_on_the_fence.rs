@@ -55,7 +55,7 @@ fn main() {
 
     for (ind, item) in wall.iter().enumerate().step_by(2) {
         let prev_index = if ind > 0 {ind - 1} else {0};
-        if (ind == 0 && item > &0) {
+        if ind == 0 && item > &0 {
             println!("0 {}", item);
             flag = true;
         }
